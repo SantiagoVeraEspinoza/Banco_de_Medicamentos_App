@@ -11,7 +11,7 @@ import SwiftUI
 struct Banco_de_MedicamentosApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
         }
     }
 }
