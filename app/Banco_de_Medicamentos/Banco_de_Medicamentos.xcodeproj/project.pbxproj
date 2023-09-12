@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		45D5BC612A98650B00BDD76A /* Banco_de_MedicamentosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5BC602A98650B00BDD76A /* Banco_de_MedicamentosApp.swift */; };
-		45D5BC632A98650B00BDD76A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5BC622A98650B00BDD76A /* ContentView.swift */; };
+		45D5BC632A98650B00BDD76A /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5BC622A98650B00BDD76A /* SplashScreen.swift */; };
 		45D5BC652A98650C00BDD76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC642A98650C00BDD76A /* Assets.xcassets */; };
 		45D5BC682A98650C00BDD76A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */; };
+		DBB4C5D02AAFC457009B71E1 /* Acuerdos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4C5CF2AAFC457009B71E1 /* Acuerdos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45D5BC5D2A98650B00BDD76A /* Banco_de_Medicamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banco_de_Medicamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D5BC602A98650B00BDD76A /* Banco_de_MedicamentosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banco_de_MedicamentosApp.swift; sourceTree = "<group>"; };
-		45D5BC622A98650B00BDD76A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45D5BC622A98650B00BDD76A /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		45D5BC642A98650C00BDD76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBB4C5CF2AAFC457009B71E1 /* Acuerdos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acuerdos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				45D5BC602A98650B00BDD76A /* Banco_de_MedicamentosApp.swift */,
-				45D5BC622A98650B00BDD76A /* ContentView.swift */,
+				45D5BC622A98650B00BDD76A /* SplashScreen.swift */,
+				DBB4C5CF2AAFC457009B71E1 /* Acuerdos.swift */,
 				45D5BC642A98650C00BDD76A /* Assets.xcassets */,
 				45D5BC662A98650C00BDD76A /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D5BC632A98650B00BDD76A /* ContentView.swift in Sources */,
+				45D5BC632A98650B00BDD76A /* SplashScreen.swift in Sources */,
+				DBB4C5D02AAFC457009B71E1 /* Acuerdos.swift in Sources */,
 				45D5BC612A98650B00BDD76A /* Banco_de_MedicamentosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
