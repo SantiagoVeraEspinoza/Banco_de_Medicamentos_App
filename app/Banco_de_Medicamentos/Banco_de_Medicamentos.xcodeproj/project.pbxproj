@@ -12,6 +12,7 @@
 		45D5BC652A98650C00BDD76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC642A98650C00BDD76A /* Assets.xcassets */; };
 		45D5BC682A98650C00BDD76A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */; };
 		55118A112AAAB0F6001211FA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55118A102AAAB0F6001211FA /* Home.swift */; };
+		DB475D932AB17489001D0DBE /* Acuerdos.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB475D922AB17489001D0DBE /* Acuerdos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		45D5BC642A98650C00BDD76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55118A102AAAB0F6001211FA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		DB475D922AB17489001D0DBE /* Acuerdos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acuerdos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		45D5BC5F2A98650B00BDD76A /* Banco_de_Medicamentos */ = {
 			isa = PBXGroup;
 			children = (
+				DB475D922AB17489001D0DBE /* Acuerdos.swift */,
 				45D5BC602A98650B00BDD76A /* Banco_de_MedicamentosApp.swift */,
 				45D5BC622A98650B00BDD76A /* ContentView.swift */,
 				55118A102AAAB0F6001211FA /* Home.swift */,
@@ -143,6 +146,7 @@
 				45D5BC632A98650B00BDD76A /* ContentView.swift in Sources */,
 				55118A112AAAB0F6001211FA /* Home.swift in Sources */,
 				45D5BC612A98650B00BDD76A /* Banco_de_MedicamentosApp.swift in Sources */,
+				DB475D932AB17489001D0DBE /* Acuerdos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
