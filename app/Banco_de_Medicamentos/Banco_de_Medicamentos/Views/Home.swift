@@ -1,10 +1,3 @@
-//
-//  Home.swift
-//  Banco_de_Medicamentos
-//
-//  Created by Santiago Vera on 07/09/23.
-//
-
 import Foundation
 import SwiftUI
 

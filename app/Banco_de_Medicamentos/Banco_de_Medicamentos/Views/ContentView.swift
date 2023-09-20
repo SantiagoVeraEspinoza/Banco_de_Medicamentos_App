@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Banco_de_Medicamentos
-//
-//  Created by user246310 on 8/24/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
