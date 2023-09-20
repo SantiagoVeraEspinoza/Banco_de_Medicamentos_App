@@ -13,6 +13,8 @@
 		45D5BC682A98650C00BDD76A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */; };
 		55118A112AAAB0F6001211FA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55118A102AAAB0F6001211FA /* Home.swift */; };
 		DBCB84B32ABAB950002217F6 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB84B22ABAB950002217F6 /* CircleView.swift */; };
+		DBCB84B82ABABBB6002217F6 /* Medicina.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB84B72ABABBB6002217F6 /* Medicina.swift */; };
+		DBCB84BA2ABABBC2002217F6 /* Centro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB84B92ABABBC2002217F6 /* Centro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55118A102AAAB0F6001211FA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		DBCB84B22ABAB950002217F6 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		DBCB84B72ABABBB6002217F6 /* Medicina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicina.swift; sourceTree = "<group>"; };
+		DBCB84B92ABABBC2002217F6 /* Centro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,9 @@
 		45D5BC5F2A98650B00BDD76A /* Banco_de_Medicamentos */ = {
 			isa = PBXGroup;
 			children = (
+				DB7BAE172ABBA1DD000E7B4D /* Views */,
+				DBCB84B62ABABB88002217F6 /* Model */,
 				45D5BC602A98650B00BDD76A /* Banco_de_MedicamentosApp.swift */,
-				45D5BC622A98650B00BDD76A /* ContentView.swift */,
-				DBCB84B22ABAB950002217F6 /* CircleView.swift */,
-				55118A102AAAB0F6001211FA /* Home.swift */,
 				45D5BC642A98650C00BDD76A /* Assets.xcassets */,
 				45D5BC662A98650C00BDD76A /* Preview Content */,
 			);
@@ -71,6 +74,25 @@
 				45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB7BAE172ABBA1DD000E7B4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55118A102AAAB0F6001211FA /* Home.swift */,
+				DBCB84B22ABAB950002217F6 /* CircleView.swift */,
+				45D5BC622A98650B00BDD76A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBCB84B62ABABB88002217F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBCB84B72ABABBB6002217F6 /* Medicina.swift */,
+				DBCB84B92ABABBC2002217F6 /* Centro.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +167,9 @@
 			files = (
 				DBCB84B32ABAB950002217F6 /* CircleView.swift in Sources */,
 				45D5BC632A98650B00BDD76A /* ContentView.swift in Sources */,
+				DBCB84B82ABABBB6002217F6 /* Medicina.swift in Sources */,
 				55118A112AAAB0F6001211FA /* Home.swift in Sources */,
+				DBCB84BA2ABABBC2002217F6 /* Centro.swift in Sources */,
 				45D5BC612A98650B00BDD76A /* Banco_de_MedicamentosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
