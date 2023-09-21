@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Aspirina",
+        "descripcion": "Aspirina es uno de los medicamentos más ampliamente usados para aliviar el dolor de cabeza, así como, algunos síntomas del resfriado común y la fiebre.",
+        "prescripcion": false,
+        "imageUrl": "https://www.aspirina.com.mx/sites/g/files/vrxlpx43166/files/2022-10/Aspirina-40_3.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Xanax",
+        "descripcion": "El alprazolam es un fármaco de la familia de las benzodiacepinas y se utiliza para el tratamiento de los estados de ansiedad, especialmente en las crisis de angustia, agorafobia, ataques de pánico y estrés intenso.",
+        "prescripcion": true,
+        "imageUrl": "https://www.fahorro.com/media/catalog/product/cache/3fba745dcec88e97bfe808bedc471260/3/0/300090029081.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Pepto Bismol",
+        "descripcion": "El subsalicilato de bismuto es un medicamento usado para el tratamiento de la indigestión, el malestar estomacal, la diarrea y otros malestares temporales del tracto gastrointestinal.",
+        "prescripcion": false,
+        "imageUrl": "https://images.ctfassets.net/6nvsi8thxn6u/2AiI8MbOn70baSjcaHcVdb/4e3a84a7986d653df06b7811ac8a9759/Group_1260.png"
+    }
+]
