@@ -1,9 +1,20 @@
+// Acuerdos
+
 import Foundation
 import SwiftUI
 
+
+
 struct SecondView: View {
     var body: some View {
-        Text("Esta es la segunda vista").navigationBarTitle("Segunda Vista", displayMode: .inline)
+        VStack{
+            Spacer()
+            Image("logo")
+            Spacer()
+            Button("Iniciar"){}
+            Button("Aviso de privacidad") {
+            }
+        }.padding()
     }
 }
 
