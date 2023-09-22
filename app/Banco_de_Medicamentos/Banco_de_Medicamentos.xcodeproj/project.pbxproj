@@ -18,9 +18,11 @@
 		DB14C16F2ABBBEAB002EDBB4 /* LoadCentroJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14C16E2ABBBEAB002EDBB4 /* LoadCentroJSON.swift */; };
 		DB7BAE192ABBAC2C000E7B4D /* MedicinaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */; };
 		DB7BAE1B2ABBAC41000E7B4D /* CentroRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */; };
+		DBCA3CBC2ABD2C3A001FF2BC /* MedicinaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */; };
 		DBCB84B32ABAB950002217F6 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB84B22ABAB950002217F6 /* CircleView.swift */; };
 		DBCB84B82ABABBB6002217F6 /* Medicina.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB84B72ABABBB6002217F6 /* Medicina.swift */; };
 		DBCB84BA2ABABBC2002217F6 /* Centro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCB84B92ABABBC2002217F6 /* Centro.swift */; };
+		DBE1C6D52ABD642600D81942 /* MedicinaDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE1C6D42ABD642600D81942 /* MedicinaDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +38,11 @@
 		DB14C16E2ABBBEAB002EDBB4 /* LoadCentroJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCentroJSON.swift; sourceTree = "<group>"; };
 		DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinaRow.swift; sourceTree = "<group>"; };
 		DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroRow.swift; sourceTree = "<group>"; };
+		DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinaList.swift; sourceTree = "<group>"; };
 		DBCB84B22ABAB950002217F6 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		DBCB84B72ABABBB6002217F6 /* Medicina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicina.swift; sourceTree = "<group>"; };
 		DBCB84B92ABABBC2002217F6 /* Centro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centro.swift; sourceTree = "<group>"; };
+		DBE1C6D42ABD642600D81942 /* MedicinaDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinaDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				DBCB84B22ABAB950002217F6 /* CircleView.swift */,
 				45D5BC622A98650B00BDD76A /* ContentView.swift */,
 				DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */,
+				DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */,
+				DBE1C6D42ABD642600D81942 /* MedicinaDetail.swift */,
 				DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */,
 			);
 			path = Views;
@@ -193,9 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE1C6D52ABD642600D81942 /* MedicinaDetail.swift in Sources */,
 				DBCB84B32ABAB950002217F6 /* CircleView.swift in Sources */,
 				DB7BAE192ABBAC2C000E7B4D /* MedicinaRow.swift in Sources */,
 				DB14C16D2ABBBE9A002EDBB4 /* LoadMedicinaJSON.swift in Sources */,
+				DBCA3CBC2ABD2C3A001FF2BC /* MedicinaList.swift in Sources */,
 				45D5BC632A98650B00BDD76A /* ContentView.swift in Sources */,
 				DBCB84B82ABABBB6002217F6 /* Medicina.swift in Sources */,
 				55118A112AAAB0F6001211FA /* Home.swift in Sources */,

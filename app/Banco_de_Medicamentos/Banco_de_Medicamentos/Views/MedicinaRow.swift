@@ -12,6 +12,7 @@ struct MedicinaRow: View {
                 ProgressView()
             }
             Text(medicina.name)
+            Spacer()
         }
     }
 }
