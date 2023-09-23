@@ -10,10 +10,12 @@ struct SecondView: View {
         VStack{
             Spacer()
             Image("logo")
+            Text("El Banco de Alimentos se enorgullece de presentarte un nuevo servicio para el bienestar de ti y tu familia Con la confianza del Banco de Alimentos, ahora para medicamentos.")
             Spacer()
-            Button("Iniciar"){}
-            Button("Aviso de privacidad") {
+            NavigationLink(destination: MainMenu()){
+                Text("Iniciar")
             }
+            Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
         }.padding()
     }
 }
