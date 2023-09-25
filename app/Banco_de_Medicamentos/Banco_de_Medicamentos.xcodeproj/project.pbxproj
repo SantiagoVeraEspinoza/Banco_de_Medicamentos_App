@@ -16,6 +16,9 @@
 		DB14C16B2ABBBCE1002EDBB4 /* centroData.json in Resources */ = {isa = PBXBuildFile; fileRef = DB14C16A2ABBBCE1002EDBB4 /* centroData.json */; };
 		DB14C16D2ABBBE9A002EDBB4 /* LoadDataJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14C16C2ABBBE9A002EDBB4 /* LoadDataJSON.swift */; };
 		DB5A29332ABE76130014B9C1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A29322ABE76130014B9C1 /* MainMenu.swift */; };
+		DB6DE4F82AC12905002D2C4B /* CentroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE4F72AC12905002D2C4B /* CentroList.swift */; };
+		DB6DE4FA2AC129DC002D2C4B /* CentroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE4F92AC129DC002D2C4B /* CentroDetail.swift */; };
+		DB6DE4FC2AC12B0F002D2C4B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE4FB2AC12B0F002D2C4B /* MapView.swift */; };
 		DB7BAE192ABBAC2C000E7B4D /* MedicinaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */; };
 		DB7BAE1B2ABBAC41000E7B4D /* CentroRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */; };
 		DBCA3CBC2ABD2C3A001FF2BC /* MedicinaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */; };
@@ -36,6 +39,9 @@
 		DB14C16A2ABBBCE1002EDBB4 /* centroData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = centroData.json; sourceTree = "<group>"; };
 		DB14C16C2ABBBE9A002EDBB4 /* LoadDataJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataJSON.swift; sourceTree = "<group>"; };
 		DB5A29322ABE76130014B9C1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		DB6DE4F72AC12905002D2C4B /* CentroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroList.swift; sourceTree = "<group>"; };
+		DB6DE4F92AC129DC002D2C4B /* CentroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroDetail.swift; sourceTree = "<group>"; };
+		DB6DE4FB2AC12B0F002D2C4B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinaRow.swift; sourceTree = "<group>"; };
 		DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroRow.swift; sourceTree = "<group>"; };
 		DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinaList.swift; sourceTree = "<group>"; };
@@ -111,7 +117,10 @@
 				DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */,
 				DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */,
 				DBE1C6D42ABD642600D81942 /* MedicinaDetail.swift */,
+				DB6DE4FB2AC12B0F002D2C4B /* MapView.swift */,
 				DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */,
+				DB6DE4F72AC12905002D2C4B /* CentroList.swift */,
+				DB6DE4F92AC129DC002D2C4B /* CentroDetail.swift */,
 				DB5A29322ABE76130014B9C1 /* MainMenu.swift */,
 			);
 			path = Views;
@@ -202,8 +211,11 @@
 				DB5A29332ABE76130014B9C1 /* MainMenu.swift in Sources */,
 				DBE1C6D52ABD642600D81942 /* MedicinaDetail.swift in Sources */,
 				DBCB84B32ABAB950002217F6 /* CircleView.swift in Sources */,
+				DB6DE4FA2AC129DC002D2C4B /* CentroDetail.swift in Sources */,
+				DB6DE4F82AC12905002D2C4B /* CentroList.swift in Sources */,
 				DB7BAE192ABBAC2C000E7B4D /* MedicinaRow.swift in Sources */,
 				DB14C16D2ABBBE9A002EDBB4 /* LoadDataJSON.swift in Sources */,
+				DB6DE4FC2AC12B0F002D2C4B /* MapView.swift in Sources */,
 				DBCA3CBC2ABD2C3A001FF2BC /* MedicinaList.swift in Sources */,
 				45D5BC632A98650B00BDD76A /* ContentView.swift in Sources */,
 				DBCB84B82ABABBB6002217F6 /* Medicina.swift in Sources */,
