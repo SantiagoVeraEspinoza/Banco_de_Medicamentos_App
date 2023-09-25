@@ -20,3 +20,4 @@ func load<T: Decodable>(_ filename: String) -> T {
 }
 
 var medicinas:[Medicina] = load("medicinaData.json")
+var centros:[Centro] = load("centroData.json")

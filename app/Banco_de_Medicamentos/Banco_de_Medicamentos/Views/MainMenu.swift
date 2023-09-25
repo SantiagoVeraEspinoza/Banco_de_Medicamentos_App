@@ -13,6 +13,10 @@ struct MainMenu: View {
             NavigationLink(destination: MedicinaList()){
                 Text("Medicinas")
             }
+            NavigationLink(destination: CentroList()){
+                Text("Centros")
+            }
+
         }
     }
 }
