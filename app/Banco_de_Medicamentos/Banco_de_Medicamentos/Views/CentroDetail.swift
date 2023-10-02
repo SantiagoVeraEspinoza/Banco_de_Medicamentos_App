@@ -1,11 +1,19 @@
 import SwiftUI
+import CoreLocation
 
 struct CentroDetail: View {
     var centro:Centro
+    
     var body: some View {
-        let url = URL(string: "maps://?saddr=&daddr=\(centro.locationCoordinate.latitude),\(centro.locationCoordinate.longitude)")
+        var locationCoordinate: CLLocationCoordinate2D {
+            CLLocationCoordinate2D(
+                latitude: centro.latitude, longitude: centro.longitude
+            )
+        }
+        
+        let url = URL(string: "maps://?saddr=&daddr=\(centro.latitude),\(centro.longitude)")
         ScrollView {
-            MapView(coordinate: centro.locationCoordinate).ignoresSafeArea(edges: .top).frame(height: 300)
+            MapView(coordinate: locationCoordinate).ignoresSafeArea(edges: .top).frame(height: 300)
             CircleImage(ImageUrl: centro.imageUrl).ignoresSafeArea(edges: .top).offset(y: -130).padding(.bottom, -130)
             VStack(alignment: .leading){
                 Text(centro.name).font(.title)
