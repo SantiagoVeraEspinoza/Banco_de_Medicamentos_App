@@ -1,21 +1,34 @@
 import SwiftUI
 
 struct SignUp: View {
+    @State private var mail: String = ""
+    @State private var password: String = ""
+    @State private var repeatPassword: String = ""
+    
     var body: some View {
         VStack{
-            Button(
-                action: {},
-                label: {
-                    Label("Registrate con Apple",systemImage: "apple.logo")
-                }
-            ).buttonStyle(.bordered)
-            Button(
-                action: {},
-                label: {
-                    Label("Registrate con Google",systemImage: "g.circle")
-                }
-            ).buttonStyle(.bordered)
-        }
+            Form{
+                TextField(text: $mail, prompt: Text("Correo")){}
+                SecureField(text: $password, prompt: Text("Contrasena")){}
+                SecureField(text: $repeatPassword, prompt: Text("Repita contrasena")){}
+                Button(
+                    "Registrarse",
+                    action: {}
+                )
+                Button(
+                    action: {},
+                    label: {
+                        Label("Registrarse con Apple",systemImage: "apple.logo")
+                    }
+                )
+                Button(
+                    action: {},
+                    label: {
+                        Label("Registrarse con Google",systemImage: "g.circle")
+                    }
+                )
+            }
+        }.padding()
     }
 }
 

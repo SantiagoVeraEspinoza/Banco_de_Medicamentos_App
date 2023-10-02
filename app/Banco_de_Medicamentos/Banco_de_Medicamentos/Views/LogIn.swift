@@ -1,20 +1,30 @@
 import SwiftUI
 
 struct LogIn: View {
+    @State private var mail: String = ""
+    @State private var password: String = ""
     var body: some View {
         VStack{
-            Button(
-                action: {},
-                label: {
-                    Label("Inicia sesion con Apple",systemImage: "apple.logo")
-                }
-            ).buttonStyle(.bordered)
-            Button(
-                action: {},
-                label: {
-                    Label("Inicia sesion con Google",systemImage: "g.circle")
-                }
-            ).buttonStyle(.bordered)
+            Form{
+                TextField(text: $mail, prompt: Text("Correo")){}
+                SecureField(text: $password, prompt: Text("Contrasena")){}
+                Button(
+                    "Iniciar sesion",
+                    action: {}
+                )
+                Button(
+                    action: {},
+                    label: {
+                        Label("Iniciar sesion con Apple",systemImage: "apple.logo")
+                    }
+                )
+                Button(
+                    action: {},
+                    label: {
+                        Label("Iniciar sesion con Google",systemImage: "g.circle")
+                    }
+                )
+            }
         }
     }
 }
