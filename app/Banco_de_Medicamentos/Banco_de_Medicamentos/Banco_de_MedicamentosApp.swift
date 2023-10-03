@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct Banco_de_MedicamentosApp: App {
+    @StateObject var firestoreManager = FirestoreManager()
+    
+    init() {
+            FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(firestoreManager)
         }
     }
 }
