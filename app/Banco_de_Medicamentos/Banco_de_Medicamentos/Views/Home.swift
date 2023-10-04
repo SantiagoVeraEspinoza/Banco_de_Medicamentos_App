@@ -6,6 +6,8 @@ import SwiftUI
 struct SecondView: View {
     @EnvironmentObject var firestoreManager: FirestoreManager
     
+    @State private var curr_id = "4zN5sy2Lhkuguh3o35Et"
+    
     //firestoreManager.fetchCenterFromInventory(center_id: "ImMQGZrYKCY9NbFUgIim")
     
     var body: some View {
@@ -18,9 +20,22 @@ struct SecondView: View {
             
             Text("Data from Firestore: \(firestoreManager.data?.idCentro ?? "")")
                         .onAppear {
-                            // Call fetchData when the view appears
-                            firestoreManager.fetchData()
+                            // Call fetchData when the view appears - 4zN5sy2Lhkuguh3o35Et - G3oT7wIi0IpmE0hzkD7d
+                            firestoreManager.fetchData(curr_id: curr_id)
                         }
+            
+            Button("Cambiar Valor") {
+                // Modificar la variable al ser presionado el botón
+                if curr_id == "4zN5sy2Lhkuguh3o35Et" {
+                    curr_id = "G3oT7wIi0IpmE0hzkD7d"
+                } else {
+                    curr_id = "4zN5sy2Lhkuguh3o35Et"
+                }
+                
+                firestoreManager.fetchData(curr_id: curr_id)
+            }
+            
+            Text("Curr id:  \(curr_id)")
             
             Spacer()
             NavigationLink(destination: MainMenu()){

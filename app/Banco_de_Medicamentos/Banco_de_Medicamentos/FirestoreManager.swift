@@ -85,8 +85,9 @@ class FirestoreManager: ObservableObject {
         }
     }
     
-    func fetchData(){
-        db.collection("BancoDeMedicamentos").document("fI6Pke7q2ZhMboi5HkC1").collection("Inventario").document("G3oT7wIi0IpmE0hzkD7d")
+    func fetchData(curr_id: String){
+        //G3oT7wIi0IpmE0hzkD7d
+        db.collection("BancoDeMedicamentos").document("fI6Pke7q2ZhMboi5HkC1").collection("Inventario").document(curr_id)
             .addSnapshotListener { documentSnapshot, error in
                 guard let document = documentSnapshot else {
                     print("Error fetching document: \(error!)")
