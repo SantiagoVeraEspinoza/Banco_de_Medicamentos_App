@@ -4,9 +4,12 @@ import Foundation
 import SwiftUI
 
 struct SecondView: View {
-    @EnvironmentObject var firestoreManager: FirestoreManager
     
     @State private var curr_id = "4zN5sy2Lhkuguh3o35Et"
+    @State private var curr_center_id = "ImMQGZrYKCY9NbFUgIim"
+    
+    @EnvironmentObject var inventoryManager: InventoryFirestoreManager
+    @EnvironmentObject var centerManager: CenterFirestoreManager
     
     //firestoreManager.fetchCenterFromInventory(center_id: "ImMQGZrYKCY9NbFUgIim")
     
@@ -15,13 +18,19 @@ struct SecondView: View {
             Spacer()
             Image("logo")
             Text("El Banco de Alimentos se enorgullece de presentarte un nuevo servicio para el bienestar de ti y tu familia Con la confianza del Banco de Alimentos, ahora para medicamentos.")
-            Text("My test: \(firestoreManager.data?.id ?? "")")
+            Text("My test: \(inventoryManager.data?.id ?? "")")
                     .padding()
             
-            Text("Data from Firestore: \(firestoreManager.data?.idCentro ?? "")")
+            Text("Inventory data from Firestore: \(inventoryManager.data?.idCentro ?? "")")
                         .onAppear {
                             // Call fetchData when the view appears - 4zN5sy2Lhkuguh3o35Et - G3oT7wIi0IpmE0hzkD7d
-                            firestoreManager.fetchData(curr_id: curr_id)
+                            inventoryManager.fetchData(curr_id: curr_id)
+                        }
+            
+            Text("Center data from Firestore: \(centerManager.data?.nombre ?? "")")
+                        .onAppear {
+                            // Call fetchData when the view appears - 4zN5sy2Lhkuguh3o35Et - G3oT7wIi0IpmE0hzkD7d
+                            centerManager.fetchData(curr_id: curr_center_id)
                         }
             
             Button("Cambiar Valor") {
@@ -32,7 +41,10 @@ struct SecondView: View {
                     curr_id = "4zN5sy2Lhkuguh3o35Et"
                 }
                 
-                firestoreManager.fetchData(curr_id: curr_id)
+                inventoryManager.fetchData(curr_id: curr_id)
+                
+                curr_center_id = inventoryManager.data?.idCentro ?? curr_center_id
+                centerManager.fetchData(curr_id: curr_center_id)
             }
             
             Text("Curr id:  \(curr_id)")
@@ -41,7 +53,7 @@ struct SecondView: View {
             NavigationLink(destination: MainMenu()){
                 Text("Iniciar")
             }
-            Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
+            //Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
         }.padding()
     }
 }
@@ -49,6 +61,7 @@ struct SecondView: View {
 struct SecondPreview: PreviewProvider {
     static var previews: some View {
         SecondView()
-            .environmentObject(FirestoreManager())
+            .environmentObject(InventoryFirestoreManager())
+            .environmentObject(CenterFirestoreManager())
     }
 }

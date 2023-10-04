@@ -10,7 +10,8 @@ import Firebase
 
 @main
 struct Banco_de_MedicamentosApp: App {
-    @StateObject var firestoreManager = FirestoreManager()
+    @StateObject var inventoryFirestoreManager = InventoryFirestoreManager()
+    @StateObject var centerFirestoreManager = CenterFirestoreManager()
     
     init() {
             FirebaseApp.configure()
@@ -19,7 +20,8 @@ struct Banco_de_MedicamentosApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(firestoreManager)
+                .environmentObject(inventoryFirestoreManager)
+                .environmentObject(centerFirestoreManager)
         }
     }
 }

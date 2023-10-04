@@ -26,64 +26,35 @@ struct Inventario: Identifiable {
     }
 }
 
-class FirestoreManager: ObservableObject {
+struct Centros: Identifiable {
+    var id: String
+    
+    var nombre: String
+
+    init(id: String, nombre: String) {
+        self.id = id
+        self.nombre = nombre
+    }
+}
+
+protocol DocumentFetching {
+    func fetchData(curr_id: String)
+}
+
+class BaseFirestoreManager<T>: ObservableObject where T: Identifiable {
+    
+    @Published var data: T?
+
+    func updateData(_ newData: T) {
+        DispatchQueue.main.async {
+            self.data = newData
+        }
+    }
+}
+
+class InventoryFirestoreManager: BaseFirestoreManager<Inventario>, DocumentFetching {
     
     private var db = Firestore.firestore()
-    @Published var data: Inventario?
-    
-    func fetchDB() {
-        let docRef = db.collection("BancoDeMedicamentos").document("fI6Pke7q2ZhMboi5HkC1").collection("Inventario").document("G3oT7wIi0IpmE0hzkD7d")
-
-        docRef.getDocument { (document, error) in
-            guard error == nil else {
-                print("error", error ?? "")
-                return
-            }
-
-            if let document = document, document.exists {
-                let data = document.data()
-                if let data = data {
-                    print("data", data)
-                    if let disponible = data["disponible"] as? Bool {
-                        self.data?.disponible = disponible
-                    }
-                    //self.data = data["disponible"] as? String ?? ""
-                }
-            }
-        }
-    }
-    
-    func fecthAllInventories() {
-        db.collection("BancoDeMedicamentos").document("fI6Pke7q2ZhMboi5HkC1").collection("Inventario").getDocuments() { (querySnapshot, error) in
-                        if let error = error {
-                                print("Error getting documents: \(error)")
-                        } else {
-                                for document in querySnapshot!.documents {
-                                        print("\(document.documentID): \(document.data())")
-                                }
-                        }
-        }
-    }
-    
-    func fetchCenterFromInventory(center_id: String){
-
-        let docRef = db.collection("BancoDeMedicamentos").document("fI6Pke7q2ZhMboi5HkC1").collection("Centro").document(center_id)
-
-        docRef.getDocument { (document, error) in
-            guard error == nil else {
-                print("error", error ?? "")
-                return
-            }
-
-            if let document = document, document.exists {
-                let data = document.data()
-                if let data = data {
-                    print("data", data)
-                    //self.data. = data["nombre"] as? String ?? ""
-                }
-            }
-        }
-    }
     
     func fetchData(curr_id: String){
         //G3oT7wIi0IpmE0hzkD7d
@@ -104,13 +75,34 @@ class FirestoreManager: ObservableObject {
                 let id = document.documentID
                 let inventario = Inventario(id: id, idMedicamento: idMedicamento, idCentro: idCentro, disponible: disponible, peligro: peligro)
                 DispatchQueue.main.async {
-                    self.data = inventario
+                    self.updateData(inventario)
                 }
             }
     }
+}
+
+class CenterFirestoreManager: BaseFirestoreManager<Centros>, DocumentFetching {
     
-    init() {
-        fetchDB()
-        fecthAllInventories()
+    private var db = Firestore.firestore()
+    
+    func fetchData(curr_id: String){
+        //G3oT7wIi0IpmE0hzkD7d
+        db.collection("BancoDeMedicamentos").document("fI6Pke7q2ZhMboi5HkC1").collection("Centro").document(curr_id)
+            .addSnapshotListener { documentSnapshot, error in
+                guard let document = documentSnapshot else {
+                    print("Error fetching document: \(error!)")
+                    return
+                }
+                guard let data = document.data(),
+                    let nombre = data["nombre"] as? String else {
+                    print("Document data was empty.")
+                    return
+                }
+                let id = document.documentID
+                let centro = Centros(id: id, nombre: nombre)
+                DispatchQueue.main.async {
+                    self.updateData(centro)
+                }
+            }
     }
 }
