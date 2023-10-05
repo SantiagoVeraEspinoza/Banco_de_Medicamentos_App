@@ -9,14 +9,51 @@ import SwiftUI
 
 struct MainMenu: View {
     var body: some View {
-        HStack{
+        VStack{
+            
             NavigationLink(destination: MedicinaList()){
-                Text("Medicinas")
-            }
-            NavigationLink(destination: CentroList()){
-                Text("Centros")
-            }
+                GeometryReader{geo in
+                    ZStack{
+                        Image("medicinas_img").resizable()
+                            .scaledToFill()
+                            //.edgesIgnoringSafeArea(.all)
+                            .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                            
 
+                        
+                        Text("Medicinas").bold()
+                            .shadow(color: .black, radius: 1)
+                            .shadow(color: .black, radius: 1)
+                            .shadow(color: .black, radius: 1)
+               
+                            .font(.system(.largeTitle, design: .rounded).weight(.heavy))
+                            //.foregroundStyle(.black)
+                            
+                            
+                                             
+                        
+                    }
+                }
+            }
+            Spacer()
+            NavigationLink(destination: CentroList()){
+                GeometryReader{geo in
+                    ZStack{
+                        Image("centro_img").scaledToFill()
+                        //.edgesIgnoringSafeArea(.all)
+                        .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+                        
+                        Text("Centros").bold()
+                            .shadow(color: .black, radius: 1)
+                            .shadow(color: .black, radius: 1)
+                            .shadow(color: .black, radius: 1)
+                           
+                            .font(.system(.largeTitle, design: .rounded).weight(.heavy))
+                            //.foregroundColor(.black)
+                            
+                    }
+                }
+            }
         }
     }
 }
