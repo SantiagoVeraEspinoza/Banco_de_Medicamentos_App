@@ -22,9 +22,9 @@ struct MainMenu: View {
 
                         
                         Text("Medicinas").bold()
-                            .shadow(color: .black, radius: 1)
-                            .shadow(color: .black, radius: 1)
-                            .shadow(color: .black, radius: 1)
+                            .shadow(color: .white, radius: 1)
+                            .shadow(color: .white, radius: 1)
+                            .shadow(color: .white, radius: 1)
                
                             .font(.system(.largeTitle, design: .rounded).weight(.heavy))
                             //.foregroundStyle(.black)
@@ -44,9 +44,9 @@ struct MainMenu: View {
                         .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
                         
                         Text("Centros").bold()
-                            .shadow(color: .black, radius: 1)
-                            .shadow(color: .black, radius: 1)
-                            .shadow(color: .black, radius: 1)
+                            .shadow(color: .white, radius: 1)
+                            .shadow(color: .white, radius: 1)
+                            .shadow(color: .white, radius: 1)
                            
                             .font(.system(.largeTitle, design: .rounded).weight(.heavy))
                             //.foregroundColor(.black)
