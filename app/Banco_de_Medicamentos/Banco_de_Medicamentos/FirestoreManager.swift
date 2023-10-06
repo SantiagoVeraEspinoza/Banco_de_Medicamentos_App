@@ -30,10 +30,37 @@ struct Centros: Identifiable {
     var id: String
     
     var nombre: String
+    var descripcion: String
+    var latitud: String
+    var longitud: String
+    var urlImagen: String
 
-    init(id: String, nombre: String) {
+    init(id: String, nombre: String, descripcion: String, latitud: String, longitud: String, urlImagen: String) {
         self.id = id
         self.nombre = nombre
+        self.descripcion = descripcion
+        self.latitud = latitud
+        self.longitud = longitud
+        self.urlImagen = urlImagen
+    }
+}
+
+struct Medicamentos: Identifiable {
+    var id: String
+    
+    var nombre: String
+    var descripcion: String
+    var latitud: String
+    var longitud: String
+    var urlImagen: String
+
+    init(id: String, nombre: String, descripcion: String, latitud: String, longitud: String, urlImagen: String) {
+        self.id = id
+        self.nombre = nombre
+        self.descripcion = descripcion
+        self.latitud = latitud
+        self.longitud = longitud
+        self.urlImagen = urlImagen
     }
 }
 
@@ -94,12 +121,16 @@ class CenterFirestoreManager: BaseFirestoreManager<Centros>, DocumentFetching {
                     return
                 }
                 guard let data = document.data(),
-                    let nombre = data["nombre"] as? String else {
+                    let nombre = data["nombre"] as? String,
+                    let descripcion = data["descripcion"] as? String,
+                    let latitud = data["latitud"] as? String,
+                    let longitud = data["longitud"] as? String,
+                    let urlImagen = data["urlImagen"] as? String else {
                     print("Document data was empty.")
                     return
                 }
                 let id = document.documentID
-                let centro = Centros(id: id, nombre: nombre)
+                let centro = Centros(id: id, nombre: nombre, descripcion: descripcion, latitud: latitud, longitud: longitud, urlImagen: urlImagen)
                 DispatchQueue.main.async {
                     self.updateData(centro)
                 }

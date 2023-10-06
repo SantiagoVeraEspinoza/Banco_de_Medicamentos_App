@@ -31,6 +31,7 @@ struct SecondView: View {
                         .onAppear {
                             // Call fetchData when the view appears - 4zN5sy2Lhkuguh3o35Et - G3oT7wIi0IpmE0hzkD7d
                             centerManager.fetchData(curr_id: curr_center_id)
+                            print(curr_center_id)
                         }
             
             Button("Cambiar Valor") {
