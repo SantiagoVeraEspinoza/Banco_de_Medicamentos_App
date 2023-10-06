@@ -52,9 +52,15 @@ struct SecondView: View {
             
             Spacer()
             NavigationLink(destination: MainMenu()){
+                
                 Text("Iniciar")
+                    .bold()
+                    .font(.system(.largeTitle, design: .rounded).weight(.heavy))
+                    //.border(Color.black, width: 0.5)
+                                
             }
-            //Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
+            Spacer()
+            Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
         }.padding()
     }
 }
