@@ -13,7 +13,7 @@
 		45D5BC682A98650C00BDD76A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */; };
 		5501505B2ACCDBD600981D96 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501505A2ACCDBD600981D96 /* FirestoreManager.swift */; };
 		55118A112AAAB0F6001211FA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55118A102AAAB0F6001211FA /* Home.swift */; };
-		55EC57E12ACBDA8A0045C145 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55EC57E02ACBDA8A0045C145 /* GoogleService-Info.plist */; };
+		557720BC2AD0B83A00FF7040 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557720BB2AD0B83A00FF7040 /* GoogleService-Info.plist */; };
 		55EC57E42ACBDB080045C145 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 55EC57E32ACBDB080045C145 /* FirebaseAnalytics */; };
 		55EC57E62ACBDB080045C145 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 55EC57E52ACBDB080045C145 /* FirebaseAnalyticsOnDeviceConversion */; };
 		55EC57E82ACBDB080045C145 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 55EC57E72ACBDB080045C145 /* FirebaseAnalyticsSwift */; };
@@ -67,7 +67,7 @@
 		45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5501505A2ACCDBD600981D96 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		55118A102AAAB0F6001211FA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		55EC57E02ACBDA8A0045C145 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		557720BB2AD0B83A00FF7040 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB14C1682ABBBCCC002EDBB4 /* medicinaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = medicinaData.json; sourceTree = "<group>"; };
 		DB14C16A2ABBBCE1002EDBB4 /* centroData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = centroData.json; sourceTree = "<group>"; };
 		DB14C16C2ABBBE9A002EDBB4 /* LoadDataJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataJSON.swift; sourceTree = "<group>"; };
@@ -127,6 +127,7 @@
 		45D5BC542A98650B00BDD76A = {
 			isa = PBXGroup;
 			children = (
+				557720BB2AD0B83A00FF7040 /* GoogleService-Info.plist */,
 				45D5BC5F2A98650B00BDD76A /* Banco_de_Medicamentos */,
 				45D5BC5E2A98650B00BDD76A /* Products */,
 			);
@@ -148,7 +149,6 @@
 				DBCB84B62ABABB88002217F6 /* Model */,
 				45D5BC602A98650B00BDD76A /* Banco_de_MedicamentosApp.swift */,
 				5501505A2ACCDBD600981D96 /* FirestoreManager.swift */,
-				55EC57E02ACBDA8A0045C145 /* GoogleService-Info.plist */,
 				45D5BC642A98650C00BDD76A /* Assets.xcassets */,
 				45D5BC662A98650C00BDD76A /* Preview Content */,
 			);
@@ -294,7 +294,7 @@
 			files = (
 				DB14C16B2ABBBCE1002EDBB4 /* centroData.json in Resources */,
 				DB14C1692ABBBCCC002EDBB4 /* medicinaData.json in Resources */,
-				55EC57E12ACBDA8A0045C145 /* GoogleService-Info.plist in Resources */,
+				557720BC2AD0B83A00FF7040 /* GoogleService-Info.plist in Resources */,
 				45D5BC682A98650C00BDD76A /* Preview Assets.xcassets in Resources */,
 				45D5BC652A98650C00BDD76A /* Assets.xcassets in Resources */,
 			);
