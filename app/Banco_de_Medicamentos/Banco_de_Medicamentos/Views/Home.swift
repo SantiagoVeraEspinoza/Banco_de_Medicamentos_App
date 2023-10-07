@@ -58,8 +58,8 @@ struct SecondView: View {
                 .font(.system(.largeTitle, design: .rounded).weight(.heavy))
                 //.border(Color.black, width: 0.5)
             }
-            //Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
-            
+            Link("Aviso de privacidaddd", destination: URL(string: "https://bdalimentos.org/aviso/")!)
+
         }.padding()
     }
 }
