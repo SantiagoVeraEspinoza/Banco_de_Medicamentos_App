@@ -18,6 +18,9 @@ struct SecondView: View {
         VStack{
             Image("logo")
             Text("El Banco de Alimentos se enorgullece de presentarte un nuevo servicio para el bienestar de ti y tu familia Con la confianza del Banco de Alimentos, ahora para medicamentos.")
+            
+            Text("Hello")
+            
             Text("My test: \(inventoryManager.data?.id ?? "")")
                                 .padding()
             Text("Inventory data from Firestore: \(inventoryManager.data?.idCentro ?? "")")
@@ -55,8 +58,8 @@ struct SecondView: View {
                 .font(.system(.largeTitle, design: .rounded).weight(.heavy))
                 //.border(Color.black, width: 0.5)
             }
+            //Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
             
-            Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
         }.padding()
     }
 }
