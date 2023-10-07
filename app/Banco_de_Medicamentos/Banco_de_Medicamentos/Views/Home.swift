@@ -56,7 +56,7 @@ struct SecondView: View {
                 //.border(Color.black, width: 0.5)
             }
             
-            Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
+            Link("Aviso de privacidaddd", destination: URL(string: "https://bdalimentos.org/aviso/")!)
         }.padding()
     }
 }
