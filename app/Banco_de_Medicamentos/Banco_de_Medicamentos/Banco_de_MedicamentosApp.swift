@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct Banco_de_MedicamentosApp: App {
+    @StateObject var inventoryFirestoreManager = InventoryFirestoreManager()
+    @StateObject var centerFirestoreManager = CenterFirestoreManager()
+    
+    init() {
+                FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(inventoryFirestoreManager)
+                .environmentObject(centerFirestoreManager)
         }
     }
 }
