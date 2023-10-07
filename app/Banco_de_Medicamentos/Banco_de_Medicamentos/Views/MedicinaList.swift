@@ -10,6 +10,7 @@ struct MedicinaList: View {
                     MedicinaRow(medicina: medicina)
                 }
             }.navigationTitle("Medicinas")
+            
         }
     }
 }

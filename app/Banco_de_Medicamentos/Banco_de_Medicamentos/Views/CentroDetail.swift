@@ -32,7 +32,7 @@ struct CentroDetail: View {
                 
                 
             }.padding()
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 
