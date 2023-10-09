@@ -3,15 +3,16 @@ import CoreLocation
 
 struct CentroDetail: View {
     var centro:Centro
-    
     var body: some View {
+        let floatLatitude = (centro.latitude as NSString).doubleValue
+        let floatLongitude = (centro.longitude as NSString).doubleValue
         var locationCoordinate: CLLocationCoordinate2D {
             CLLocationCoordinate2D(
-                latitude: centro.latitude, longitude: centro.longitude
+                latitude: floatLatitude, longitude: floatLongitude
             )
         }
         
-        let url = URL(string: "maps://?saddr=&daddr=\(centro.latitude),\(centro.longitude)")
+        let url = URL(string: "maps://?saddr=&daddr=\(floatLatitude),\(floatLongitude)")
         ScrollView {
             MapView(coordinate: locationCoordinate).ignoresSafeArea(edges: .top).frame(height: 300)
             CircleImage(ImageUrl: centro.imageUrl).ignoresSafeArea(edges: .top).offset(y: -130).padding(.bottom, -130)

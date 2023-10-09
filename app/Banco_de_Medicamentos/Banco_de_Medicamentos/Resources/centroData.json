@@ -4,23 +4,23 @@
         "name": "Banco de Alimentos",
         "descripcion": "Organización civil con una visión en común: abatir la pobreza alimentaria en Jalisco.",
         "imageUrl": "https://cdn.milenio.com/uploads/media/2023/05/22/banco-alimentos-ubica-santa-maria.jpg",
-        "longitude": -103.355192,
-        "latitude": 20.655876
+        "longitude": "-103.355192",
+        "latitude": "20.655876"
     },
     {
         "id": 2,
         "name": "DIF Zapopan",
         "descripcion": "Centro especializado en atención psicopedagógica a niñas, niños y adolescentes con Trastorno del Espectro Autista del Sistema para el Desarrollo Integral de la familia del Municipio de Zapopan",
         "imageUrl": "https://difzapopan.gob.mx/wp-content/uploads/2023/06/Fachada-1024x768.jpg",
-        "longitude": -103.400907,
-        "latitude": 20.736272
+        "longitude": "-103.400907",
+        "latitude": "20.736272"
     },
     {
         "id": 3,
         "name": "Centro Medico IMSS",
         "descripcion": "Centro especializado en atención psicopedagógica a niñas, niños y adolescentes con Trastorno del Espectro Autista del Sistema para el Desarrollo Integral de la familia del Municipio de Zapopan",
         "imageUrl": "https://img.gruporeforma.com/imagenes/960x640/6/451/5450020.jpg",
-        "longitude": -103.326369,
-        "latitude": 20.687312
+        "longitude": "-103.326369",
+        "latitude": "20.687312"
     }
 ]
