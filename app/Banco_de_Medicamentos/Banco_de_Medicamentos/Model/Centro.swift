@@ -7,8 +7,8 @@ struct Centro: Hashable, Codable, Identifiable {
     var name: String
     var descripcion: String
     var imageUrl: String
-    var latitude: Double
-    var longitude: Double
+    var latitude: String
+    var longitude: String
     
 //    struct Coordinates: Hashable, Codable {
 //        var latitude: Double

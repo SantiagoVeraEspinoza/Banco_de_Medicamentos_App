@@ -25,6 +25,6 @@ struct MedicinaDetail: View {
 
 struct MedicinaDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MedicinaDetail(medicina: medicinas[1])
+        MedicinaDetail(medicina: MedicinasViewModel().medicinas[0])
     }
 }
