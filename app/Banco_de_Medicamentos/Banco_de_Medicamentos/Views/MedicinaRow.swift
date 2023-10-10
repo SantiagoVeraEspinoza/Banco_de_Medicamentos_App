@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MedicinaRow: View {
     var medicina:Medicina
+    
     var body: some View {
         HStack{
             AsyncImage(url: URL(string: medicina.imageUrl)){image in image
@@ -20,8 +21,8 @@ struct MedicinaRow: View {
 struct MedicinaRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            MedicinaRow(medicina: medicinas[0])
-            MedicinaRow(medicina: medicinas[1])
+            MedicinaRow(medicina: MedicinasViewModel().medicinas[0])
+            MedicinaRow(medicina: MedicinasViewModel().medicinas[1])
         }.previewLayout(.fixed(width: 300, height: 70))
     }
 }
