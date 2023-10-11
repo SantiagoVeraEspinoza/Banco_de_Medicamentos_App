@@ -11,7 +11,7 @@ struct CentroRow: View {
             } placeholder: {
                 ProgressView()
             }
-            Text(centro.name)
+            Text(centro.nombre)
             Spacer()
         }
     }
@@ -20,8 +20,8 @@ struct CentroRow: View {
 struct CentroRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CentroRow(centro: centros[0])
-            CentroRow(centro: centros[1])
+            CentroRow(centro: CentroViewModel().centros[0])
+            CentroRow(centro: CentroViewModel().centros[0])
         }
     }
 }

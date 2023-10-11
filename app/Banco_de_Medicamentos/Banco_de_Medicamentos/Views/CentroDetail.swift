@@ -17,7 +17,7 @@ struct CentroDetail: View {
             MapView(coordinate: locationCoordinate).ignoresSafeArea(edges: .top).frame(height: 300)
             CircleImage(ImageUrl: centro.imageUrl).ignoresSafeArea(edges: .top).offset(y: -130).padding(.bottom, -130)
             VStack(alignment: .leading){
-                Text(centro.name).font(.title)
+                Text(centro.nombre).font(.title)
                 Divider()
                 Text(centro.descripcion)
                 Divider()
@@ -39,6 +39,6 @@ struct CentroDetail: View {
 
 struct CentroDetail_Previews: PreviewProvider {
     static var previews: some View {
-        CentroDetail(centro: centros[2])
+        CentroDetail(centro: CentroViewModel().centros[0])
     }
 }
