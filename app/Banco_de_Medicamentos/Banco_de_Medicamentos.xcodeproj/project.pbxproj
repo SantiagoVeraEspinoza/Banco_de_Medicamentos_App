@@ -12,6 +12,7 @@
 		45D5BC652A98650C00BDD76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC642A98650C00BDD76A /* Assets.xcassets */; };
 		45D5BC682A98650C00BDD76A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */; };
 		55118A112AAAB0F6001211FA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55118A102AAAB0F6001211FA /* Home.swift */; };
+		DB0422D22AD5C69C006D88E8 /* CentroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0422D12AD5C69C006D88E8 /* CentroViewModel.swift */; };
 		DB14C1692ABBBCCC002EDBB4 /* medicinaData.json in Resources */ = {isa = PBXBuildFile; fileRef = DB14C1682ABBBCCC002EDBB4 /* medicinaData.json */; };
 		DB14C16B2ABBBCE1002EDBB4 /* centroData.json in Resources */ = {isa = PBXBuildFile; fileRef = DB14C16A2ABBBCE1002EDBB4 /* centroData.json */; };
 		DB14C16D2ABBBE9A002EDBB4 /* LoadDataJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14C16C2ABBBE9A002EDBB4 /* LoadDataJSON.swift */; };
@@ -43,6 +44,7 @@
 		45D5BC642A98650C00BDD76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55118A102AAAB0F6001211FA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		DB0422D12AD5C69C006D88E8 /* CentroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroViewModel.swift; sourceTree = "<group>"; };
 		DB14C1682ABBBCCC002EDBB4 /* medicinaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = medicinaData.json; sourceTree = "<group>"; };
 		DB14C16A2ABBBCE1002EDBB4 /* centroData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = centroData.json; sourceTree = "<group>"; };
 		DB14C16C2ABBBE9A002EDBB4 /* LoadDataJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataJSON.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DBC4FFBB2AD4987000B7B43A /* MedicinasViewModel.swift */,
+				DB0422D12AD5C69C006D88E8 /* CentroViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				45D5BC612A98650B00BDD76A /* Banco_de_MedicamentosApp.swift in Sources */,
 				DB20F9C92ACA3AE500B31607 /* LogIn.swift in Sources */,
 				DB20F9CB2ACA3AF500B31607 /* SignUp.swift in Sources */,
+				DB0422D22AD5C69C006D88E8 /* CentroViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
