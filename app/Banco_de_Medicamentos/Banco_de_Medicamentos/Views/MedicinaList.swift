@@ -1,15 +1,17 @@
 import SwiftUI
 
 struct MedicinaList: View {
+    @ObservedObject private var viewModel = MedicinasViewModel()
     var body: some View {
         NavigationView{
-            List(medicinas){medicina in
+            List(viewModel.medicinas){medicina in
                 NavigationLink{
                     MedicinaDetail(medicina: medicina)
                 } label: {
                     MedicinaRow(medicina: medicina)
                 }
             }.navigationTitle("Medicinas")
+                .onAppear{ self.viewModel.fetchData() }
         }
     }
 }
