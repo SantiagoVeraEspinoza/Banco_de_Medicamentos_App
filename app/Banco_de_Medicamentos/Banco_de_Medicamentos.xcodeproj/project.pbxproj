@@ -131,21 +131,53 @@
 		DB7BAE172ABBA1DD000E7B4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DB8C6E6C2AD9AE9700B71FDC /* Authentication */,
+				DB8C6E6B2AD9AE8600B71FDC /* Component */,
+				DB8C6E6A2AD9AE7D00B71FDC /* Centro */,
+				DB8C6E692AD9AE7500B71FDC /* Medicamento */,
 				55118A102AAAB0F6001211FA /* Home.swift */,
-				DBCB84B22ABAB950002217F6 /* CircleView.swift */,
 				45D5BC622A98650B00BDD76A /* ContentView.swift */,
-				DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */,
-				DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */,
-				DBE1C6D42ABD642600D81942 /* MedicinaDetail.swift */,
-				DB6DE4FB2AC12B0F002D2C4B /* MapView.swift */,
-				DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */,
-				DB6DE4F72AC12905002D2C4B /* CentroList.swift */,
-				DB6DE4F92AC129DC002D2C4B /* CentroDetail.swift */,
 				DB5A29322ABE76130014B9C1 /* MainMenu.swift */,
-				DB20F9C82ACA3AE500B31607 /* LogIn.swift */,
-				DB20F9CA2ACA3AF500B31607 /* SignUp.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DB8C6E692AD9AE7500B71FDC /* Medicamento */ = {
+			isa = PBXGroup;
+			children = (
+				DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */,
+				DBE1C6D42ABD642600D81942 /* MedicinaDetail.swift */,
+				DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */,
+			);
+			path = Medicamento;
+			sourceTree = "<group>";
+		};
+		DB8C6E6A2AD9AE7D00B71FDC /* Centro */ = {
+			isa = PBXGroup;
+			children = (
+				DB6DE4F92AC129DC002D2C4B /* CentroDetail.swift */,
+				DB6DE4F72AC12905002D2C4B /* CentroList.swift */,
+				DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */,
+			);
+			path = Centro;
+			sourceTree = "<group>";
+		};
+		DB8C6E6B2AD9AE8600B71FDC /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				DB6DE4FB2AC12B0F002D2C4B /* MapView.swift */,
+				DBCB84B22ABAB950002217F6 /* CircleView.swift */,
+				DB20F9CA2ACA3AF500B31607 /* SignUp.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		DB8C6E6C2AD9AE9700B71FDC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				DB20F9C82ACA3AE500B31607 /* LogIn.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		DBC4FFBA2AD4985700B7B43A /* ViewModel */ = {
