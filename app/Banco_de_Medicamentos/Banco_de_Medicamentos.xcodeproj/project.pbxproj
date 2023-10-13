@@ -167,7 +167,6 @@
 			children = (
 				DB6DE4FB2AC12B0F002D2C4B /* MapView.swift */,
 				DBCB84B22ABAB950002217F6 /* CircleView.swift */,
-				DB20F9CA2ACA3AF500B31607 /* SignUp.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -175,6 +174,7 @@
 		DB8C6E6C2AD9AE9700B71FDC /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				DB20F9CA2ACA3AF500B31607 /* SignUp.swift */,
 				DB20F9C82ACA3AE500B31607 /* LogIn.swift */,
 			);
 			path = Authentication;
