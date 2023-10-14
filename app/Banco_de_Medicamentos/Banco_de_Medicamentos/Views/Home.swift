@@ -5,7 +5,7 @@ import SwiftUI
 
 
 
-struct SecondView: View {
+struct Home: View {
     var body: some View {
         VStack{
             Image("logo")
@@ -24,8 +24,8 @@ struct SecondView: View {
     }
 }
 
-struct SecondPreview: PreviewProvider {
+struct HomePreview: PreviewProvider {
     static var previews: some View {
-        SecondView()
+        Home()
     }
 }

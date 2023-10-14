@@ -19,7 +19,7 @@ struct Banco_de_MedicamentosApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                Home()
             }
         }
     }
