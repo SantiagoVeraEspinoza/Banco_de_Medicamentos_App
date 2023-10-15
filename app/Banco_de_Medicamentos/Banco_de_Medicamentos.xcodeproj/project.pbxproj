@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		45D5BC612A98650B00BDD76A /* Banco_de_MedicamentosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5BC602A98650B00BDD76A /* Banco_de_MedicamentosApp.swift */; };
-		45D5BC632A98650B00BDD76A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5BC622A98650B00BDD76A /* ContentView.swift */; };
 		45D5BC652A98650C00BDD76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC642A98650C00BDD76A /* Assets.xcassets */; };
 		45D5BC682A98650C00BDD76A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */; };
 		55118A112AAAB0F6001211FA /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55118A102AAAB0F6001211FA /* Home.swift */; };
@@ -16,8 +15,11 @@
 		DB14C1692ABBBCCC002EDBB4 /* medicinaData.json in Resources */ = {isa = PBXBuildFile; fileRef = DB14C1682ABBBCCC002EDBB4 /* medicinaData.json */; };
 		DB14C16B2ABBBCE1002EDBB4 /* centroData.json in Resources */ = {isa = PBXBuildFile; fileRef = DB14C16A2ABBBCE1002EDBB4 /* centroData.json */; };
 		DB14C16D2ABBBE9A002EDBB4 /* LoadDataJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14C16C2ABBBE9A002EDBB4 /* LoadDataJSON.swift */; };
-		DB20F9C92ACA3AE500B31607 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB20F9C82ACA3AE500B31607 /* LogIn.swift */; };
-		DB20F9CB2ACA3AF500B31607 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB20F9CA2ACA3AF500B31607 /* SignUp.swift */; };
+		DB19000D2ADB4672003E0496 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19000C2ADB4672003E0496 /* AuthenticationViewModel.swift */; };
+		DB1900102ADB46ED003E0496 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB19000F2ADB46ED003E0496 /* FirebaseAnalyticsSwift */; };
+		DB1900122ADB48D2003E0496 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1900112ADB48D2003E0496 /* AuthenticationView.swift */; };
+		DB1900142ADB5A6A003E0496 /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1900132ADB5A6A003E0496 /* AuthenticatedView.swift */; };
+		DB1900162ADB5A9C003E0496 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1900152ADB5A9C003E0496 /* UserProfileView.swift */; };
 		DB5A29332ABE76130014B9C1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A29322ABE76130014B9C1 /* MainMenu.swift */; };
 		DB5A52532ACFAE5A00B6A236 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DB5A52522ACFAE5A00B6A236 /* FirebaseAnalytics */; };
 		DB5A52552ACFAE5A00B6A236 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DB5A52542ACFAE5A00B6A236 /* FirebaseAuth */; };
@@ -28,6 +30,8 @@
 		DB6DE4FC2AC12B0F002D2C4B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6DE4FB2AC12B0F002D2C4B /* MapView.swift */; };
 		DB7BAE192ABBAC2C000E7B4D /* MedicinaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */; };
 		DB7BAE1B2ABBAC41000E7B4D /* CentroRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */; };
+		DBB393362ADA5E58007DD4C4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB393352ADA5E58007DD4C4 /* LoginView.swift */; };
+		DBB393382ADA5E61007DD4C4 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB393372ADA5E61007DD4C4 /* SignupView.swift */; };
 		DBC4FFB92AD4925D00B7B43A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBC4FFB82AD4925D00B7B43A /* GoogleService-Info.plist */; };
 		DBC4FFBC2AD4987000B7B43A /* MedicinasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4FFBB2AD4987000B7B43A /* MedicinasViewModel.swift */; };
 		DBCA3CBC2ABD2C3A001FF2BC /* MedicinaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */; };
@@ -40,7 +44,6 @@
 /* Begin PBXFileReference section */
 		45D5BC5D2A98650B00BDD76A /* Banco_de_Medicamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Banco_de_Medicamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D5BC602A98650B00BDD76A /* Banco_de_MedicamentosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banco_de_MedicamentosApp.swift; sourceTree = "<group>"; };
-		45D5BC622A98650B00BDD76A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		45D5BC642A98650C00BDD76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45D5BC672A98650C00BDD76A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		55118A102AAAB0F6001211FA /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -48,14 +51,18 @@
 		DB14C1682ABBBCCC002EDBB4 /* medicinaData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = medicinaData.json; sourceTree = "<group>"; };
 		DB14C16A2ABBBCE1002EDBB4 /* centroData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = centroData.json; sourceTree = "<group>"; };
 		DB14C16C2ABBBE9A002EDBB4 /* LoadDataJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataJSON.swift; sourceTree = "<group>"; };
-		DB20F9C82ACA3AE500B31607 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
-		DB20F9CA2ACA3AF500B31607 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		DB19000C2ADB4672003E0496 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		DB1900112ADB48D2003E0496 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		DB1900132ADB5A6A003E0496 /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
+		DB1900152ADB5A9C003E0496 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		DB5A29322ABE76130014B9C1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		DB6DE4F72AC12905002D2C4B /* CentroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroList.swift; sourceTree = "<group>"; };
 		DB6DE4F92AC129DC002D2C4B /* CentroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroDetail.swift; sourceTree = "<group>"; };
 		DB6DE4FB2AC12B0F002D2C4B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DB7BAE182ABBAC2C000E7B4D /* MedicinaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinaRow.swift; sourceTree = "<group>"; };
 		DB7BAE1A2ABBAC41000E7B4D /* CentroRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroRow.swift; sourceTree = "<group>"; };
+		DBB393352ADA5E58007DD4C4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DBB393372ADA5E61007DD4C4 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		DBC4FFB82AD4925D00B7B43A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBC4FFBB2AD4987000B7B43A /* MedicinasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinasViewModel.swift; sourceTree = "<group>"; };
 		DBCA3CBB2ABD2C3A001FF2BC /* MedicinaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicinaList.swift; sourceTree = "<group>"; };
@@ -74,6 +81,7 @@
 				DB5A52592ACFAE5A00B6A236 /* FirebaseFirestore in Frameworks */,
 				DB5A52532ACFAE5A00B6A236 /* FirebaseAnalytics in Frameworks */,
 				DB5A52552ACFAE5A00B6A236 /* FirebaseAuth in Frameworks */,
+				DB1900102ADB46ED003E0496 /* FirebaseAnalyticsSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,7 @@
 			children = (
 				45D5BC5F2A98650B00BDD76A /* Banco_de_Medicamentos */,
 				45D5BC5E2A98650B00BDD76A /* Products */,
+				DB19000E2ADB46ED003E0496 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +137,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DB19000E2ADB46ED003E0496 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB7BAE172ABBA1DD000E7B4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +152,6 @@
 				DB8C6E6A2AD9AE7D00B71FDC /* Centro */,
 				DB8C6E692AD9AE7500B71FDC /* Medicamento */,
 				55118A102AAAB0F6001211FA /* Home.swift */,
-				45D5BC622A98650B00BDD76A /* ContentView.swift */,
 				DB5A29322ABE76130014B9C1 /* MainMenu.swift */,
 			);
 			path = Views;
@@ -174,8 +189,11 @@
 		DB8C6E6C2AD9AE9700B71FDC /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				DB20F9CA2ACA3AF500B31607 /* SignUp.swift */,
-				DB20F9C82ACA3AE500B31607 /* LogIn.swift */,
+				DBB393352ADA5E58007DD4C4 /* LoginView.swift */,
+				DBB393372ADA5E61007DD4C4 /* SignupView.swift */,
+				DB1900112ADB48D2003E0496 /* AuthenticationView.swift */,
+				DB1900132ADB5A6A003E0496 /* AuthenticatedView.swift */,
+				DB1900152ADB5A9C003E0496 /* UserProfileView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -185,6 +203,7 @@
 			children = (
 				DBC4FFBB2AD4987000B7B43A /* MedicinasViewModel.swift */,
 				DB0422D12AD5C69C006D88E8 /* CentroViewModel.swift */,
+				DB19000C2ADB4672003E0496 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -220,6 +239,7 @@
 				DB5A52542ACFAE5A00B6A236 /* FirebaseAuth */,
 				DB5A52562ACFAE5A00B6A236 /* FirebaseDatabase */,
 				DB5A52582ACFAE5A00B6A236 /* FirebaseFirestore */,
+				DB19000F2ADB46ED003E0496 /* FirebaseAnalyticsSwift */,
 			);
 			productName = Banco_de_Medicamentos;
 			productReference = 45D5BC5D2A98650B00BDD76A /* Banco_de_Medicamentos.app */;
@@ -281,24 +301,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBB393382ADA5E61007DD4C4 /* SignupView.swift in Sources */,
 				DB5A29332ABE76130014B9C1 /* MainMenu.swift in Sources */,
 				DBE1C6D52ABD642600D81942 /* MedicinaDetail.swift in Sources */,
 				DBCB84B32ABAB950002217F6 /* CircleView.swift in Sources */,
 				DB6DE4FA2AC129DC002D2C4B /* CentroDetail.swift in Sources */,
 				DB6DE4F82AC12905002D2C4B /* CentroList.swift in Sources */,
 				DB7BAE192ABBAC2C000E7B4D /* MedicinaRow.swift in Sources */,
+				DB1900162ADB5A9C003E0496 /* UserProfileView.swift in Sources */,
 				DBC4FFBC2AD4987000B7B43A /* MedicinasViewModel.swift in Sources */,
 				DB14C16D2ABBBE9A002EDBB4 /* LoadDataJSON.swift in Sources */,
 				DB6DE4FC2AC12B0F002D2C4B /* MapView.swift in Sources */,
+				DB1900142ADB5A6A003E0496 /* AuthenticatedView.swift in Sources */,
 				DBCA3CBC2ABD2C3A001FF2BC /* MedicinaList.swift in Sources */,
-				45D5BC632A98650B00BDD76A /* ContentView.swift in Sources */,
 				DBCB84B82ABABBB6002217F6 /* Medicina.swift in Sources */,
+				DBB393362ADA5E58007DD4C4 /* LoginView.swift in Sources */,
 				55118A112AAAB0F6001211FA /* Home.swift in Sources */,
 				DB7BAE1B2ABBAC41000E7B4D /* CentroRow.swift in Sources */,
+				DB19000D2ADB4672003E0496 /* AuthenticationViewModel.swift in Sources */,
+				DB1900122ADB48D2003E0496 /* AuthenticationView.swift in Sources */,
 				DBCB84BA2ABABBC2002217F6 /* Centro.swift in Sources */,
 				45D5BC612A98650B00BDD76A /* Banco_de_MedicamentosApp.swift in Sources */,
-				DB20F9C92ACA3AE500B31607 /* LogIn.swift in Sources */,
-				DB20F9CB2ACA3AF500B31607 /* SignUp.swift in Sources */,
 				DB0422D22AD5C69C006D88E8 /* CentroViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +536,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DB19000F2ADB46ED003E0496 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB5A52512ACFAE5A00B6A236 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
 		DB5A52522ACFAE5A00B6A236 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DB5A52512ACFAE5A00B6A236 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

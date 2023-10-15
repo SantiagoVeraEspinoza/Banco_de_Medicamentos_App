@@ -5,14 +5,13 @@ import SwiftUI
 
 
 
-struct SecondView: View {
+struct Home: View {
     var body: some View {
         VStack{
             Image("logo")
             Text("El Banco de Alimentos se enorgullece de presentarte un nuevo servicio para el bienestar de ti y tu familia Con la confianza del Banco de Alimentos, ahora para medicamentos.")
             Spacer()
             NavigationLink(destination: MainMenu()){
-                
             Text("Iniciar")
                 .bold()
                 .font(.system(.largeTitle, design: .rounded).weight(.heavy))
@@ -20,12 +19,13 @@ struct SecondView: View {
             }
             
             Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
+            AuthenticatedView{}
         }.padding()
     }
 }
 
-struct SecondPreview: PreviewProvider {
+struct HomePreview: PreviewProvider {
     static var previews: some View {
-        SecondView()
+        Home()
     }
 }
