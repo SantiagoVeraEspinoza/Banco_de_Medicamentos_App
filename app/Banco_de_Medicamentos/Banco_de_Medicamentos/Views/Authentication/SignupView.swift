@@ -24,11 +24,7 @@ struct SignupView: View {
 
   var body: some View {
     VStack {
-      Image("SignUp")
-        .resizable()
-        .aspectRatio(contentMode: .fit)
-        .frame(minHeight: 300, maxHeight: 400)
-      Text("Sign up")
+      Text("Registrarse")
         .font(.largeTitle)
         .fontWeight(.bold)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -84,7 +80,7 @@ struct SignupView: View {
 
       Button(action: signUpWithEmailPassword) {
         if viewModel.authenticationState != .authenticating {
-          Text("Sign up")
+          Text("Registrarse")
             .padding(.vertical, 8)
             .frame(maxWidth: .infinity)
         }
@@ -100,9 +96,8 @@ struct SignupView: View {
       .buttonStyle(.borderedProminent)
 
       HStack {
-        Text("Already have an account?")
         Button(action: { viewModel.switchFlow() }) {
-          Text("Log in")
+          Text("Iniciar sesion")
             .fontWeight(.semibold)
             .foregroundColor(.blue)
         }

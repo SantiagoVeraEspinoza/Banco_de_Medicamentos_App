@@ -23,7 +23,7 @@ struct LoginView: View {
 
   var body: some View {
     VStack {
-      Text("Login")
+      Text("Iniciar sesion")
         .font(.largeTitle)
         .fontWeight(.bold)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -65,7 +65,7 @@ struct LoginView: View {
 
       Button(action: signInWithEmailPassword) {
         if viewModel.authenticationState != .authenticating {
-          Text("Login")
+          Text("Iniciar sesion")
             .padding(.vertical, 8)
             .frame(maxWidth: .infinity)
         }
@@ -81,9 +81,8 @@ struct LoginView: View {
       .buttonStyle(.borderedProminent)
 
       HStack {
-        Text("Don't have an account yet?")
         Button(action: { viewModel.switchFlow() }) {
-          Text("Sign up")
+          Text("Registrarse")
             .fontWeight(.semibold)
             .foregroundColor(.blue)
         }

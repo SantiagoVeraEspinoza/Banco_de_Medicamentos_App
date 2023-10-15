@@ -11,9 +11,6 @@ struct Home: View {
             Image("logo")
             Text("El Banco de Alimentos se enorgullece de presentarte un nuevo servicio para el bienestar de ti y tu familia Con la confianza del Banco de Alimentos, ahora para medicamentos.")
             Spacer()
-            NavigationView {
-                AuthenticatedView{}
-            }
             NavigationLink(destination: MainMenu()){
             Text("Iniciar")
                 .bold()
@@ -22,6 +19,7 @@ struct Home: View {
             }
             
             Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
+            AuthenticatedView{}
         }.padding()
     }
 }

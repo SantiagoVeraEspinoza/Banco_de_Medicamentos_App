@@ -35,9 +35,9 @@ struct AuthenticatedView<Content, Unauthenticated>: View where Content: View, Un
           unauthenticated
         }
         else {
-          Text("You're not logged in.")
+          Text("")
         }
-        Button("Tap here to log in") {
+        Button("Iniciar sesion") {
           viewModel.reset()
           presentingLoginScreen.toggle()
         }
@@ -49,8 +49,9 @@ struct AuthenticatedView<Content, Unauthenticated>: View where Content: View, Un
     case .authenticated:
       VStack {
         content()
-        Text("You're logged in as \(viewModel.displayName).")
-        Button("Tap here to view your profile") {
+        Text("")
+        Text(viewModel.displayName)
+        Button("Configurar usuario") {
           presentingProfileScreen.toggle()
         }
       }
