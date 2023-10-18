@@ -9,7 +9,7 @@ struct Home: View {
     var body: some View {
         VStack{
             Image("logo")
-            Text("El Banco de Alimentos se enorgullece de presentarte un nuevo servicio para el bienestar de ti y tu familia Con la confianza del Banco de Alimentos, ahora para medicamentos.")
+            Text("El Banco de Alimentos se enorgullece de presentarte un nuevo servicio para el bienestar de ti y tu familia. Con la confianza del Banco de Alimentos, ahora para medicamentos.")
             Spacer()
             NavigationLink(destination: MainMenu()){
             Text("Iniciar")
@@ -18,8 +18,9 @@ struct Home: View {
                 //.border(Color.black, width: 0.5)
             }
             
-            Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
             AuthenticatedView{}
+            Link("Aviso de privacidad", destination: URL(string: "https://bdalimentos.org/aviso/")!)
+
         }.padding()
     }
 }

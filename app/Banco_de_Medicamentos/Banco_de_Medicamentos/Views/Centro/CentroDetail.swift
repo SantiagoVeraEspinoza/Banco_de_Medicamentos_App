@@ -35,6 +35,7 @@ struct CentroDetail: View {
             }.padding()
         }
     }
+
 }
 
 struct CentroDetail_Previews: PreviewProvider {

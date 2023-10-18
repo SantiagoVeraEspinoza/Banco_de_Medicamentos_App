@@ -13,6 +13,7 @@ struct MedicinaList: View {
             }.navigationTitle("Medicinas")
                 .onAppear{ self.viewModel.fetchData() }
         }
+        
     }
 }
 

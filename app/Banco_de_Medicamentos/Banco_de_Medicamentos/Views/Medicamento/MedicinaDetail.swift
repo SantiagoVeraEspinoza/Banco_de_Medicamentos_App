@@ -20,6 +20,8 @@ struct MedicinaDetail: View {
         }
         .navigationTitle(medicina.name)
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+
     }
 }
 

@@ -6,11 +6,13 @@ struct CentroList: View {
         NavigationView {
             List(viewModel.centros){ centro in
                 NavigationLink {
-                    CentroDetail(centro: centro)
+                    CentroDetail(centro: centro).navigationBarBackButtonHidden(true)
+                    
                 } label: {
                     CentroRow(centro: centro)
                 }
             }.navigationTitle("Centros")
+                
                 .onAppear{ self.viewModel.fetchData() }
         }
     }
