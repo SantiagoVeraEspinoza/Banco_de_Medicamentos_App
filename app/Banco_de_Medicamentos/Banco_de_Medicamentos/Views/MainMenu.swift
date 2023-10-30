@@ -14,22 +14,23 @@ struct MainMenu: View {
             NavigationLink(destination: MedicinaList()){
                 GeometryReader{geo in
                     ZStack{
-                        Image("medicinas_img").resizable()
+                        Image("medicinas_img2").resizable()
                             .scaledToFill()
                             //.edgesIgnoringSafeArea(.all)
                             .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
-                            .blur(radius: 3)
-                            .grayscale(0.50)
+                            //.blur(radius: 3)
+                            //.grayscale(0.50)
                             
 
                         
-                        Text("Medicinas").bold()
-                            //.foregroundColor(.white)
-                            .shadow(color: .white, radius: 1)
-                            .shadow(color: .white, radius: 1)
-                            //.shadow(color: .white, radius: 1)
-               
-                            .font(.system(.largeTitle, design: .rounded).weight(.heavy))
+                        Text("Medicamentos").bold()
+                            .foregroundColor(.white)
+                            .shadow(color: .blue, radius: 1)
+                            .shadow(color: .blue, radius: 1)
+                            .shadow(color: .blue, radius: 1)
+                            .shadow(color: .blue, radius: 1)
+                        
+                            .font(.system(size: 45, design: .rounded).weight(.heavy))
                             //.foregroundStyle(.black)
                             
                             
@@ -42,19 +43,20 @@ struct MainMenu: View {
             NavigationLink(destination: CentroList()){
                 GeometryReader{geo in
                     ZStack{
-                        Image("centro_img").scaledToFill()
+                        Image("centro_img2").scaledToFill()
                         //.edgesIgnoringSafeArea(.all)
                         .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
-                        .blur(radius: 3)
-                        .grayscale(0.50)
+                        //.blur(radius: 3)
+                        //.grayscale(0.50)
                         
                         Text("Centros").bold()
-                            //.foregroundColor(.white)
-                            .shadow(color: .white, radius: 1)
-                            .shadow(color: .white, radius: 1)
-                            //.shadow(color: .white, radius: 1)
-                           
-                            .font(.system(.largeTitle, design: .rounded).weight(.heavy))
+                            .foregroundColor(.white)
+                            .shadow(color: .blue, radius: 1)
+                            .shadow(color: .blue, radius: 1)
+                            .shadow(color: .blue, radius: 1)
+                            .shadow(color: .blue, radius: 1)
+                        
+                            .font(.system(size: 50, design: .rounded).weight(.heavy))
                             //.foregroundColor(.black)
                             
                     }

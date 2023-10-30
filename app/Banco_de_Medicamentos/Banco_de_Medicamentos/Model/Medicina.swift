@@ -1,7 +1,7 @@
 import Foundation
 
-struct Medicina: Hashable, Codable, Identifiable{
-    var id: Int
+struct Medicina: Identifiable{
+    var id: String = UUID().uuidString
     var name: String
     var descripcion: String
     var prescripcion: Bool

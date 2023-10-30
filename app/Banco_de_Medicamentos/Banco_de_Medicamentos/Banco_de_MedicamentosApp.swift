@@ -1,27 +1,26 @@
-//
-//  Banco_de_MedicamentosApp.swift
-//  Banco_de_Medicamentos
-//
-//  Created by user246310 on 8/24/23.
-//
-
 import SwiftUI
-import Firebase
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    FirebaseApp.configure()
+
+    return true
+  }
+}
 
 @main
 struct Banco_de_MedicamentosApp: App {
-    @StateObject var inventoryFirestoreManager = InventoryFirestoreManager()
-    @StateObject var centerFirestoreManager = CenterFirestoreManager()
-    
-    init() {
-                FirebaseApp.configure()
-    }
-    
+    // register app delegate for Firebase setup
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(inventoryFirestoreManager)
-                .environmentObject(centerFirestoreManager)
+            NavigationView {
+                Home()
+            }
         }
     }
 }

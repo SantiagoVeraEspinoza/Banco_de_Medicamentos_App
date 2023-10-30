@@ -2,13 +2,13 @@ import Foundation
 import SwiftUI
 //import CoreLocation
 
-struct Centro: Hashable, Codable, Identifiable {
-    var id: Int
-    var name: String
+struct Centro: Identifiable {
+    var id: String = UUID().uuidString
+    var nombre: String
     var descripcion: String
     var imageUrl: String
-    var latitude: Double
-    var longitude: Double
+    var latitude: String
+    var longitude: String
     
 //    struct Coordinates: Hashable, Codable {
 //        var latitude: Double

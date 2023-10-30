@@ -20,11 +20,13 @@ struct MedicinaDetail: View {
         }
         .navigationTitle(medicina.name)
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+
     }
 }
 
 struct MedicinaDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MedicinaDetail(medicina: medicinas[1])
+        MedicinaDetail(medicina: MedicinasViewModel().medicinas[0])
     }
 }
